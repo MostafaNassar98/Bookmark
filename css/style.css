@@ -1,0 +1,11 @@
+/* -------------Global---------------- */
+:root{
+    --section-color:rgb(206, 204, 204);
+}
+.section-color{
+    background-color: var(--section-color);
+}
+.table-responsive{
+    max-height: 30vh;
+    overflow: auto !important;
+}

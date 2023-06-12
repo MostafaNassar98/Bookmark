@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============fontawesome link============== -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- ============bootstrap link================= -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- ============style link====================== -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BookMarkr</title>
+</head>
+<body>
+    <!-- =================start site-Data ======================-->
+    <div class="container vh-100 p-5">
+        <h1 class="text-secondary">Bookmarker</h1>
+        <hr>
+        <section class="bookmark section-color text-center">
+            <div class="p-5">
+                <h3>Bookmark your favorite sites</h3>
+                <label for="siteName" class="fw-bold mt-2">Site Name</label>
+                <input type="text" id="siteName" placeholder="BookMark Name ....." class="form-control w-75 m-auto mt-2">
+                <div class="alert alert-danger d-none" id="nameAlert" role="alert">
+                    INPUT REQIRED    
+                </div>
+                <label for="siteUrl" class="fw-bold mt-2">Site URL</label>
+                <input type="url" id="siteUrl" placeholder="website URL ....." class="form-control w-75 m-auto mt-2">
+                <div class="alert alert-danger d-none" id="urlAlert" role="alert">
+                    URL REQIRED    
+                </div>
+                <div class="alert alert-danger d-none" id="urlValid" role="alert">
+                    site you Entered is aready Exist   
+                </div>
+                <button class="btn btn-primary mt-4" id="addBtn">Add Bookmark</button>
+                <button class="btn btn-warning mt-4 d-none" id="updateBtn">Update Bookmark</button>
+                
+            </div>
+        </section>
+        <!-- =================end site-Data ======================-->
+        
+        <!-- =================start table ======================-->
+        <section class="container p-3 section-color mt-4 text-center">
+            <input type="search" id="searchInput" class="w-50 form-control m-auto" placeholder="Search....">
+            <div class="table-responsive p-2">
+                <table class="table table-primary ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Url</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- =================end table ======================-->
+        <hr>
+        <!-- =================start footer ======================-->
+        <section class="footer">
+            <p class="fw-bold">© 2019 Bookmarker Inc.</p>
+        </section>
+        <!-- =================end footer ======================-->
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
